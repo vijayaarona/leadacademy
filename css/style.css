@@ -1,0 +1,268 @@
+body{
+    background: #e9eaec !important;
+}
+.customwidth {
+    width: 1000px;
+    margin: 2rem auto 0 !important;
+    background: #fff;
+    border-top: 2px solid #c5c5c5;
+    border-radius: 5px;
+    border-left: 7px solid #65cc00;
+    border-right: 7px solid #65cc00;
+}
+.courvestyle_left img {
+    margin-top: 20px;
+    margin-left: 13px;
+}
+.courvestyle_left::before {
+    content: "";
+    width: 45px;
+    height: 100px;
+    border: 2px solid #7db548;
+    border-right-color: rgb(125, 181, 72);
+    border-right-style: solid;
+    border-right-width: 2px;
+    position: absolute;
+    border-right: none;
+    margin-top: 15px;
+    margin-left: 0px;
+    border-radius: 0px 0 0 10px;
+}
+.courvestyle_right::after {
+    content: "";
+    width: 45px;
+    height: 100px;
+    border: 2px solid #7db548;
+    border-right-color: rgb(125, 181, 72);
+    border-right-style: solid;
+    border-right-width: 2px;
+    position: absolute;
+    border-left: none;
+    margin-top: 15px;
+    margin-left: 10px;
+    border-radius: 0px 0 10px 0px;
+}
+.header_btn {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+.header_btn li a {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background: #7db548;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 2.5rem;
+    letter-spacing: 0.5px;
+}
+.header_btn li:first-child a {
+    border-radius: 0 0 0px 10px;
+}
+.header_btn li:last-child a {
+    margin-right: 1.5rem;
+    background: #3465cb;
+    border-radius: 0 0 10px 0;
+}
+.header_btn li a:hover {
+    text-decoration: none;
+    background: #04183a;
+}
+.menu-area{
+    background: #d61a5e 
+}
+.dropdown-menu{
+    padding:0;
+    margin:0;
+    border:0 solid transition!important;
+    border:0 solid rgba(0,0,0,.15);
+    border-radius:0;
+    -webkit-box-shadow:none!important;
+    box-shadow:none!important 
+}
+.mainmenu a, .navbar-default .navbar-nav > li > a, .mainmenu ul li a , .navbar-expand-lg .navbar-nav .nav-link{
+    color: #fff;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 10px 50.3px;
+    font-family: 'Roboto',sans-serif;
+    display: block !important;
+    letter-spacing: 1px;
+}
+.mainmenu .active a,.mainmenu .active a:focus,.mainmenu .active a:hover,.mainmenu li a:hover,.mainmenu li a:focus ,.navbar-default .navbar-nav>.show>a, .navbar-default .navbar-nav>.show>a:focus, .navbar-default .navbar-nav>.show>a:hover{
+    color: #fff;
+    /* background: #4CAF50; */
+    outline: 0;
+    text-decoration: none;
+}
+.mainmenu li:first-child.active a, .mainmenu li:first-child a:hover {
+    border-radius: 0 0 0 20px;
+}
+.mainmenu li:last-child.active a,.mainmenu li:last-child a:hover {
+    border-radius: 0 0 20px 0px;
+}
+/*==========Sub Menu=v==========*/
+.mainmenu .collapse ul > li:hover > a{
+    background: #4CAF50;
+}
+.mainmenu .collapse ul ul > li:hover > a, .navbar-default .navbar-nav .show .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .show .dropdown-menu > li > a:hover{
+    background: #4CAF50;
+}
+.mainmenu .collapse ul ul ul > li:hover > a{
+    background: #4CAF50;
+}
+.mainmenu .collapse ul ul, .mainmenu .collapse ul ul.dropdown-menu{
+    background:#1565C0;
+}
+.mainmenu .collapse ul ul ul, .mainmenu .collapse ul ul ul.dropdown-menu{
+    background:#1E88E5 
+}
+.mainmenu .collapse ul ul ul ul, .mainmenu .collapse ul ul ul ul.dropdown-menu{
+    background:#64B5F6 
+}
+/******************************Drop-down menu work on hover**********************************/
+.mainmenu ul li:nth-child(even) a
+{
+    background: #65cc00;
+}
+.mainmenu.navbar{
+    background: #fff;
+    width: 80%;
+    min-height: 20px;
+    margin: 0 auto;
+    padding: 0rem .5rem 0.5rem;
+    border-radius: 0 0 30px 30px;
+}
+.mainmenu .navbar-nav {
+    background: #3266cc;
+    width: 100%;
+    border-bottom: 5px solid #66cc00;
+    border-radius: 0px 0 20px 20px;
+}
+@media only screen and (min-width: 767px) {
+    .mainmenu .collapse ul li:hover> ul{
+        display:block 
+   }
+    .mainmenu .collapse ul ul{
+        position:absolute;
+        top:100%;
+        left:0;
+        min-width:250px;
+        display:none 
+   }
+   /*******/
+    .mainmenu .collapse ul ul li{
+        position:relative 
+   }
+    .mainmenu .collapse ul ul li:hover> ul{
+        display:block 
+   }
+    .mainmenu .collapse ul ul ul{
+        position:absolute;
+        top:0;
+        left:100%;
+        min-width:250px;
+        display:none 
+   }
+   /*******/
+    .mainmenu .collapse ul ul ul li{
+        position:relative 
+   }
+    .mainmenu .collapse ul ul ul li:hover ul{
+        display:block 
+   }
+    .mainmenu .collapse ul ul ul ul{
+        position:absolute;
+        top:0;
+        left:-100%;
+        min-width:250px;
+        display:none;
+        z-index:1 
+   }
+}
+.menuposition {
+    position: absolute;
+    z-index: 9;
+    width: 1130px;
+    margin-top: 2rem;
+}
+
+.banner_outer {
+    background: #fffafa;
+    padding:8px 8px !important;
+    border-radius: 10px 10px 0 0;
+    border:2px solid #7fb249;
+    margin-top: 2rem;
+}
+.imgbanner {
+    border: 3px solid #1e6a1f;
+    border-radius: 10px 10px 0 0;
+}
+.mobilesection
+{
+    position: absolute;
+    margin-top: -3.8rem;
+    width: 1130px;
+}
+.mobileouter_style {
+    background: #fff;
+    padding: 10px 6px 0;
+    border-radius: 30px 30px 0 0;
+    width: 80%;
+    margin: 0 auto;
+}
+.mobileinner_section {
+    background: #3266cc;
+    border-top: 5px solid #66cc00;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    margin: 0 auto;
+}
+.mobileinner_section h4
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #fff;
+    padding: 10px;
+}
+.specialsection_style
+{
+    margin-top: 2rem;
+}
+.fullbox_style
+{
+    border:2px solid #81b14d;
+    border-top: none;
+}
+.fullbox_style h2{
+    color: #1343a0;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    letter-spacing: 0.5px;
+}
+@media only screen and (max-width: 767px) {
+    .navbar-nav .show .dropdown-menu .dropdown-menu > li > a{
+        padding:16px 15px 16px 35px 
+   }
+    .navbar-nav .show .dropdown-menu .dropdown-menu .dropdown-menu > li > a{
+        padding:16px 15px 16px 45px 
+   }
+}
+@media (max-width:767px) {
+    .header_btn li a {
+        width: 100px;
+   }
+}

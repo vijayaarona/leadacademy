@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Leadacademy</title>
+        <link rel="shortcut icon" type="image/x-icon" href="images/fav.png"/>
+         <!-- Custom Style sheet -->
+        <link href="css/style.css" rel="stylesheet" />
+        <!-- Bootstrap Style Sheet -->
+        <link href="css/bootstrap.css" rel="stylesheet"  />
+        <!-- Fontawesome icon Style sheet -->
+        <link href="css/all.min.css" rel="stylesheet" />
+
+        <!-- Jquery Library Initialize-->
+        <script src="js/jquery.min.js"></script>
+        <!-- Bootstrap Js -->
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
+ <div class="container-fluid">
+        <div class="container customwidth">
+
+   
+            
+            <!-- ============================= Start Header =========================================== -->
+            <header>
+            <div class="row">
+                <div class="col-md-4 courvestyle_left col-xs-12">
+                    <img src="images/leadacademy.png" class="img-fluid" />
+                </div>
+                <div class="col-md-8 col-xs-12">
+                  <ul class="header_btn courvestyle_right">
+                      <li><a href="#">Apply</a></li>
+                      <li><a href="#">Online</a></li>
+                  </ul>
+                </div>
+            </div>
+        </header>
+        <!-- ============================= End Header =========================================== -->
+
+        <!-- ============================= Start Menu ============================================ -->
+        <div class="row menuposition">
+
+      
+        <nav class="navbar navbar-light navbar-expand-lg mainmenu">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ">
+                        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">About Us</a></li>                      
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <!-- <li class="dropdown">
+                            <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown2</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown3</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                </ul>
+                            </li>
+                            </ul>
+                        </li> -->
+                        
+                    </ul>
+                </div>
+            </nav>  </div>
+<!-- ============================= End Menu ============================================ -->
+
+<!-- ================================== Start Banner Section ================================ -->
+
+    <div class="col-xl-12 banner_outer">
+       <div class="imgbanner">
+           <img src="images\banner.jpg" class="img-fluid">
+       </div>
+    </div>
+
+<!-- ===================================== End Banner Section ==================================== -->
+
+<!-- ======================================= Start Mobile No Section ============================ -->
+<div class="row mobilesection">
+    <div class="col-xl-12 ">
+        <div class="mobileouter_style">
+        <div class="mobileinner_section">
+            <h4>Courtsy By:Humtum Network (+1(551)236-5399)</h4>
+        </div></div>
+    </div>
+</div>
+<!-- ======================================= End Mobile No Section ============================ -->
+
+<!-- ======================================= Start Special Project & SEO Section ================================ -->
+
+<!-- <div class="row specialsection_style">
+    <div class="col-xl-7">
+     <div class="fullbox_style">
+         <h2>Special  Projects</h2>
+     </div>
+    </div>
+    <div class="col-xl-5">
+
+    </div>
+</div> -->
+<!-- ======================================= End Special Project & SEO Section ================================ -->
+        </div>
+    </div>
+<script>
+(function($){
+	$('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
+	  if (!$(this).next().hasClass('show')) {
+		$(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+	  }
+	  var $subMenu = $(this).next(".dropdown-menu");
+	  $subMenu.toggleClass('show');
+
+	  $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+		$('.dropdown-submenu .show').removeClass("show");
+	  });
+
+	  return false;
+	});
+})(jQuery)
+</script>
+    </body>
+</html>
