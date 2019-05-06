@@ -57,7 +57,7 @@ body{
     height: 50px;
     text-align: center;
     line-height: 50px;
-    background: #7db548;
+    background: #66cc00;
     color: #fff;
     font-weight: bold;
     font-size: 18px;
@@ -129,10 +129,6 @@ body{
     background:#64B5F6 
 }
 /******************************Drop-down menu work on hover**********************************/
-.mainmenu ul li:nth-child(even) a
-{
-    background: #65cc00;
-}
 .mainmenu.navbar{
     background: #fff;
     width: 80%;
@@ -146,6 +142,10 @@ body{
     width: 100%;
     border-bottom: 5px solid #66cc00;
     border-radius: 0px 0 20px 20px;
+}
+.mainmenu li:nth-child(even) a
+{
+    background-color: #66cc00;
 }
 @media only screen and (min-width: 767px) {
     .mainmenu .collapse ul li:hover> ul{
@@ -249,9 +249,300 @@ body{
     font-weight: bold;
     font-size: 20px;
     text-align: center;
-    width: 80%;
+    width: 83%;
     margin: 0 auto;
     letter-spacing: 0.5px;
+    border:2px solid #81b14d;
+    border-top: none;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0rem;
+}
+.fullbox_style::before{
+    border: 1px solid #81b14d;
+    content: "";
+    width: 8%;
+    position: absolute;
+}
+.fullbox_style h2::after
+{
+    border: 1px solid #81b14d;
+    content: "";
+    width: 3.5rem;
+    position: absolute;
+    right: 15px;
+}
+
+.speicalpro_style
+{
+    margin: 0.3rem 0.4rem;
+    border: 2px solid #81b14d;
+}
+.speicalproimg_style,.specialpro_desc
+{
+    padding: 0.7rem;
+}
+.speicalproimg_style::before
+{
+    content: "";
+    border: 2px solid #3266cc;
+    width: 37.5rem;
+    position: absolute;
+    height: 100px;
+    border-bottom: 0;
+}
+.specialpro_desc::before
+{
+    content: "";
+    border: 2px solid #3266cc;
+    width: 37.5rem;
+    position: absolute;
+    height: 105px;
+    border-top: 0;
+}
+.specialpro_desc p
+{
+    padding: 0 0.7rem;
+    margin-bottom: 5px;
+}
+.readmore_btn
+{
+    text-align: right;
+    padding-right: 2rem;
+}
+.readmore_btn a
+{
+    color: #c40c0c;
+}
+.specialsection_style img
+{
+    min-height: 190px;
+    max-height: 190px
+}
+
+
+
+
+.seofullbox_style
+{
+    border:2px solid #81b14d;
+    border-top: none;
+}
+.seofullbox_style h2{
+    color: #1343a0;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    width: 83%;
+    margin: 0 auto;
+    letter-spacing: 0.5px;
+    border:2px solid #81b14d;
+    border-top: none;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0rem;
+}
+.seofullbox_style::before{
+    border: 1px solid #81b14d;
+    content: "";
+    width: 8%;
+    position: absolute;
+}
+.seofullbox_style h2::after
+{
+    border: 1px solid #81b14d;
+    content: "";
+    width: 2.6rem;
+    position: absolute;
+    right: 15px;
+}
+
+.seospeicalpro_style
+{
+    margin: 0.3rem 0.4rem;
+    border: 2px solid #81b14d;
+}
+.seospeicalproimg_style,.seospecialpro_desc
+{
+    padding: 0.7rem;
+}
+.seospeicalproimg_style::before
+{
+    content: "";
+    border: 2px solid #3266cc;
+    width: 25.8rem;
+    position: absolute;
+    height: 100px;
+    border-bottom: 0;
+}
+.seospecialpro_desc::before
+{
+    content: "";
+    border: 2px solid #3266cc;
+    width: 25.8rem;
+    position: absolute;
+    height: 105px;
+    border-top: 0;
+}
+.seospecialpro_desc p
+{
+    padding: 0 0.7rem;
+    margin-bottom: 5px;
+}
+
+
+.secondsection_style
+{
+    margin-top: 1rem;
+}
+
+.webfullbox_style
+{
+    border:2px solid #81b14d;
+    border-top: none;
+}
+.webfullbox_style h2{
+    color: #1343a0;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    width: 83%;
+    margin: 0 auto;
+    letter-spacing: 0.5px;
+    border:2px solid #81b14d;
+    border-top: none;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0rem;
+}
+.webfullbox_style::before{
+    border: 1px solid #81b14d;
+    content: "";
+    width: 8%;
+    position: absolute;
+}
+.webfullbox_style h2::after
+{
+    border: 1px solid #81b14d;
+    content: "";
+    width: 2.0rem;
+    position: absolute;
+    right: 15px;
+}
+
+.webspeicalpro_style
+{
+    margin: 0.3rem 0.4rem;
+    border: 2px solid #81b14d;
+}
+.webspeicalproimg_style,.seospecialpro_desc
+{
+    padding: 0.7rem;
+}
+.webspeicalproimg_style::before
+{
+    content: "";
+    border: 2px solid #3266cc;
+    width: 19.9rem;
+    position: absolute;
+    height: 100px;
+    border-bottom: 0;
+}
+.webspecialpro_desc::before
+{
+    content: "";
+    border: 2px solid #3266cc;
+    width: 19.9rem;
+    position: absolute;
+    height: 105px;
+    border-top: 0;
+}
+.webspecialpro_desc p
+{
+    padding: 0 0.7rem;
+    margin-bottom: 5px;
+}
+.webspecialpro_desc
+{
+    padding: 0.7rem;
+}
+
+footer
+{
+    margin-top: 1rem;
+}
+footer::before
+{
+    content: "";
+    border: 2px solid #81b14d;
+    height: 100px;
+    position: absolute;
+    width: 4rem;
+    border-right: none;
+    border-bottom: none;
+}
+.footerright_cur h4::after
+{
+    content: "";
+    border: 2px solid #81b14d;
+    height: 100px;
+    position: absolute;
+    width: 4rem;
+    border-left: none;
+    border-bottom: none;
+    right: 15px;
+}
+footer h4.footerleft_txt
+{
+    color: #3266cc;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 2.5rem 0;
+    margin: 0;
+    padding-left: 3rem;
+}
+
+.footerright_cur h4
+{
+    padding-right: 3rem;
+    color: #3266cc;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    text-align: right;
+    line-height: 6.5rem;
+    
+}
+.facebook_list
+{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.facebook_list li a
+{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 10px;
+    margin-top: 2rem;
+}
+.facebook_list li:first-child a
+{
+    background: #4867aa;
+}
+.facebook_list li:nth-child(2) a
+{
+    background: #16a2f1;
+}
+.facebook_list li:nth-child(3) a
+{
+    background: #754098;
+}
+.facebook_list li:nth-child(4) a
+{
+    background: #fdf800;
 }
 @media only screen and (max-width: 767px) {
     .navbar-nav .show .dropdown-menu .dropdown-menu > li > a{
